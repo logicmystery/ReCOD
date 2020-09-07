@@ -1,0 +1,1 @@
+{"textarea_columns":null,"datetimepicker_columns":null,"datepicker_columns":null,"use_status_columns":["technician_status"],"tablePrimaryKey":"technician_ID"}

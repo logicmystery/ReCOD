@@ -1,0 +1,1 @@
+[{"cartridge_ID":{"Field":"cartridge_ID","Type":"int(10)","Null":"NO","Key":"PRI","Default":null,"Extra":""},"cartridge_institute":{"Field":"cartridge_institute","Type":"int(11)","Null":"NO","Key":"","Default":null,"Extra":""}}]

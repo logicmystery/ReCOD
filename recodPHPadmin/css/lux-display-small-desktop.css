@@ -1,0 +1,11 @@
+@media screen and (min-width: 800px) and (max-width: 1224px) {
+
+
+
+.view-display-size:after {
+	content:"display is small desktop version";
+}
+
+
+
+}

@@ -1,0 +1,1 @@
+{"textarea_columns":null,"datetimepicker_columns":["test_time_stamp"],"datepicker_columns":null,"use_status_columns":["test_result","test_status"],"tablePrimaryKey":"test_ID"}

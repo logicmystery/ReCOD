@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://bbsc.cable.ml/console/dashboard -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Console Panel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Admin panel of the site">
+        <meta name="author" content="Logic Mystery">
+
+        <!-- The styles -->
+        <link id="bs-css" href="./Console Panel_files/bootstrap-spacelab.css" rel="stylesheet">
+        <style type="text/css">
+            body {
+                padding-bottom: 40px;
+            }
+            .sidebar-nav {
+                padding: 9px 0;
+            }
+			@media (max-width: 760px) and (min-width: 600px){
+          .main-menu-span {
+           width: 10.2% !important;
+           margin-right: 4%;
+		   display:none;
+}
+}
+        </style>
+        <link href="./Console Panel_files/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="./Console Panel_files/charisma-app.css" rel="stylesheet">
+        <link href="./Console Panel_files/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+        <link href="./Console Panel_files/uniform.default.css" rel="stylesheet">
+        <link href="./Console Panel_files/colorbox.css" rel="stylesheet">
+        <link href="./Console Panel_files/jquery.cleditor.css" rel="stylesheet">
+        <link href="./Console Panel_files/jquery.noty.css" rel="stylesheet">
+        <link href="./Console Panel_files/noty_theme_default.css" rel="stylesheet">
+        <link href="./Console Panel_files/elfinder.min.css" rel="stylesheet">
+        <link href="./Console Panel_files/elfinder.theme.css" rel="stylesheet">
+        <link href="./Console Panel_files/jquery.iphone.toggle.css" rel="stylesheet">
+        <link href="./Console Panel_files/opa-icons.css" rel="stylesheet">
+        <link href="./Console Panel_files/uploadify.css" rel="stylesheet">
+        <link href="./Console Panel_files/chosen.css" rel="stylesheet">
+        <link href="./Console Panel_files/bootstrap-tagsinput.css" rel="stylesheet">
+        <link href="./Console Panel_files/jquery.datetimepicker.css" rel="stylesheet">
+        <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- The fav icon -->
+        <link rel="shortcut icon" href="http://bbsc.cable.ml/img/favicon.ico">
+        <script async="" src="./Console Panel_files/default" charset="UTF-8" crossorigin="*"></script><script>
+            var console_url = 'http://bbsc.cable.ml/console/';
+            var cdn_url = 'http://bbsc.cable.ml/';
+            var page_url = 'http://bbsc.cable.ml/console/dashboard/';
+            var section = '';
+        </script>
+<script language="Javascript" type="text/javascript" src="./Console Panel_files/edit_area_full.js.download"></script>
+    </head>
+
+    <body>
+           <div class="noty_bar noty_theme_default noty_layout_center" id="noty_xhr" style=" background-color: ghostwhite; cursor: pointer; display: none;top:0px;width: 100%;"><div class="noty_message"><span class="noty_text">Loading.. Just a moment</span></div></div>
+        <!-- topbar starts -->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="http://bbsc.cable.ml/console/"> 
+                        <img alt="site_logo" src="./Console Panel_files/1435051630.png"> 
+                    </a>
+                     
+                    <div class="btn-group pull-right theme-container">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="http://bbsc.cable.ml/console/dashboard#">
+        <i class="icon icon-comment-text"></i><span class="hidden-phone"> Language / ISO</span>
+        <span class="caret"></span>
+    </a>
+        <ul class="dropdown-menu" id="language">
+                    <li><a data-value="1" href="http://bbsc.cable.ml/console/dashboard#"><i class="icon-blank icon-ok"></i> English / EN</a></li>
+                        <li><a data-value="9" href="http://bbsc.cable.ml/console/dashboard#"><i class="icon-blank"></i> বাংলা / BEN</a></li>
+                </ul>
+</div>                                        <!-- user dropdown starts -->
+                    <div class="btn-group pull-right">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="http://bbsc.cable.ml/console/dashboard#">
+            <i class="icon-user"></i><span class="hidden-phone"> SystemD Admin</span>
+            <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+            <li><a href="http://bbsc.cable.ml/console/user/profile">Profile</a></li>
+            <li class="divider"></li>
+            <li><a href="http://bbsc.cable.ml/console/user/logout">Logout</a></li>
+    </ul>
+</div>
+                    <!-- user dropdown ends -->
+                   
+                    <!-- top navigation starts-->
+                    <div class="top-nav nav-collapse">
+    <ul class="nav">
+        <li><a target="_blank" href="http://bbsc.cable.ml/">Visit Site</a></li>
+<!--       <li><a target="_blank" href="http://support.logicmystery.com">Support</a></li>-->
+            </ul>
+</div>                    <!-- top navigation ends-->
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <!-- topbar ends -->
+        <div class="container-fluid">
+            <div class="row-fluid">		
+                <!-- left menu starts -->
+                
+
+<style>
+.accordion{
+	margin:0;
+	padding:0;
+	cursor:pointer;
+}
+</style>
+        <div class="span2 main-menu-span">
+            <div class="well nav-collapse sidebar-nav">
+                <ul class="nav nav-tabs nav-stacked main-menu">
+                    <li class="active" style="margin-left: -2px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/dashboard"><i class="icon icon-black icon-home"></i><span class=""> Dashboard</span></a></li>
+                                            						
+						                            <li class="accordion" style="margin-left: -2px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/dashboard#">
+							<i class="  icon-chevron-right"></i>
+							<span class=""> Billing Manager</span></a>
+							   <ul class="nav nav-pills nav-stacked" style="display: none;">
+																	<li style="margin-left: 0px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/invoice"><i class="icon icon-black icon-copy"></i><span class=""> Invoice</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/invoice/fast_bill"><i class="icon icon-black icon-copy"></i><span class=""> Fast Bill</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/invoice/extra_bill"><i class="icon icon-black icon-copy"></i><span class=""> Extra Bill</span></a></li>
+																</ul>
+							</li>
+													
+													
+						                            <li class="accordion" style="margin-left: -2px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/dashboard#">
+							<i class="  icon-chevron-right"></i>
+							<span class=""> Collection Report</span></a>
+							   <ul class="nav nav-pills nav-stacked" style="display: none;">
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/invoice/snap_report"><i class="icon icon-black icon-copy"></i><span class=""> Day Wise</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/invoice/collection_record"><i class="icon icon-black icon-copy"></i><span class=""> Month Wise</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/invoice/customer_wise"><i class="icon icon-black icon-copy"></i><span class=""> Customer Wise</span></a></li>
+																</ul>
+							</li>
+													
+													
+						                            <li class="accordion" style="margin-left: -2px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/dashboard#">
+							<i class="  icon-chevron-right"></i>
+							<span class=""> Monthly Report</span></a>
+							   <ul class="nav nav-pills nav-stacked" style="display: none;">
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/invoice/due_collection_sheet"><i class="icon icon-black icon-copy"></i><span class=""> Any type due</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/invoice/nonpaid_collection_sheet"><i class="icon icon-black icon-copy"></i><span class=""> No Collection Date</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/invoice/unbilled_report"><i class="icon icon-black icon-copy"></i><span class=""> Bill not generated for</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/invoice/billed_report"><i class="icon icon-black icon-copy"></i><span class=""> Billed</span></a></li>
+																</ul>
+							</li>
+													
+													
+						                            <li class="accordion" style="margin-left: -2px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/dashboard#">
+							<i class="  icon-chevron-right"></i>
+							<span class=""> Cable Entry Manager</span></a>
+							   <ul class="nav nav-pills nav-stacked" style="display: none;">
+																	<li style="margin-left: 0px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/package"><i class="icon icon-black icon-copy"></i><span class=""> Packages</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/customer"><i class="icon icon-black icon-copy"></i><span class=""> Customer</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/customer/live_portal_compare"><i class="icon icon-black icon-copy"></i><span class=""> live portal compare</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/channel"><i class="icon icon-black icon-copy"></i><span class=""> Channels</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/agent"><i class="icon icon-black icon-copy"></i><span class=""> Agent</span></a></li>
+																</ul>
+							</li>
+													
+													
+						                            <li class="accordion" style="margin-left: -2px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/dashboard#">
+							<i class="  icon-chevron-right"></i>
+							<span class=""> Internet Billing Manager</span></a>
+							   <ul class="nav nav-pills nav-stacked" style="display: none;">
+																	<li style="margin-left: 0px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/internet_invoice"><i class="icon icon-black icon-copy"></i><span class=""> Invoice</span></a></li>
+																	<li style="margin-left: 0px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/internet_invoice/fast_bill"><i class="icon icon-black icon-copy"></i><span class=""> Fast Bill</span></a></li>
+																</ul>
+							</li>
+													
+													
+						                            <li class="accordion" style="margin-left: -2px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/dashboard#">
+							<i class="  icon-chevron-right"></i>
+							<span class=""> Internet Collection Report</span></a>
+							   <ul class="nav nav-pills nav-stacked" style="display: none;">
+																	<li style="margin-left: 0px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/internet_invoice/snap_report"><i class="icon icon-black icon-copy"></i><span class=""> Day Wise</span></a></li>
+																	<li style="margin-left: 0px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/internet_invoice/collection_record"><i class="icon icon-black icon-copy"></i><span class=""> Record Sheet</span></a></li>
+																</ul>
+							</li>
+													
+													
+						                            <li class="accordion" style="margin-left: -2px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/dashboard#">
+							<i class="  icon-chevron-right"></i>
+							<span class=""> Internet Monthly Report</span></a>
+							   <ul class="nav nav-pills nav-stacked" style="display: none;">
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/internet_invoice/due_collection_sheet"><i class="icon icon-black icon-copy"></i><span class=""> Due List</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/internet_invoice/nonpaid_collection_sheet"><i class="icon icon-black icon-copy"></i><span class=""> Non Paid List</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/internet_invoice/unbilled_report"><i class="icon icon-black icon-copy"></i><span class=""> Unbilled (beta)</span></a></li>
+																</ul>
+							</li>
+													
+													
+						                            <li class="accordion" style="margin-left: -2px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/dashboard#">
+							<i class="  icon-chevron-right"></i>
+							<span class=""> Internet Customer Manager</span></a>
+							   <ul class="nav nav-pills nav-stacked" style="display: none;">
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/internet_customer"><i class="icon icon-black icon-copy"></i><span class=""> Customer</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/internet_customer/inactive_customer"><i class="icon icon-black icon-copy"></i><span class=""> Inactive Customer</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/internet_agent"><i class="icon icon-black icon-copy"></i><span class=""> Agent</span></a></li>
+																</ul>
+							</li>
+													
+													
+						                            <li class="accordion" style="margin-left: -2px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/dashboard#">
+							<i class="  icon-chevron-right"></i>
+							<span class=""> Internet Manager</span></a>
+							   <ul class="nav nav-pills nav-stacked" style="display: none;">
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/internet_package"><i class="icon icon-black icon-copy"></i><span class=""> Packages</span></a></li>
+																</ul>
+							</li>
+													
+													
+						                            <li class="accordion" style="margin-left: -2px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/dashboard#">
+							<i class="  icon-chevron-right"></i>
+							<span class=""> Management</span></a>
+							   <ul class="nav nav-pills nav-stacked" style="display: none;">
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/user"><i class="icon icon-black icon-user"></i><span class=""> Users</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/user_type"><i class="icon icon-black icon-users"></i><span class=""> Uset Type</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/language"><i class="icon-leaf"></i><span class=""> Language</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/region"><i class=" icon-globe"></i><span class=""> Region</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/region_language"><i class="icon-random"></i><span class=""> Region Language</span></a></li>
+																	<li><a class="ajax-link" href="http://bbsc.cable.ml/console/translation"><i class="icon icon-black icon-comment"></i><span class=""> Translation</span></a></li>
+																</ul>
+							</li>
+													
+													
+						                            <li class="accordion active" style="margin-left: -2px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/dashboard#">
+							<i class="  icon-chevron-right"></i>
+							<span class=""> System Settings</span></a>
+							   <ul class="nav nav-pills nav-stacked" style="display: block;">
+																	<li style="margin-left: 0px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/module"><i class="icon icon-black icon-archive"></i><span class=""> Modules</span></a></li>
+																	<li style="margin-left: 0px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/option"><i class="icon icon-black icon-gear"></i><span class=""> Option</span></a></li>
+																	<li style="margin-left: 0px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/capability"><i class="icon icon-black icon-locked"></i><span class=""> Capability</span></a></li>
+																	<li style="margin-left: 0px;"><a class="ajax-link" href="http://bbsc.cable.ml/console/menu"><i class="icon icon-black icon-link"></i><span class=""> Menu</span></a></li>
+																</ul>
+							</li>
+													
+							                    		
+                </ul>
+            </div><!--/.well -->
+        </div><!--/span-->
+                <!-- left menu ends -->
+
+                <noscript>
+                &lt;div class="alert alert-block span10"&gt;
+                    &lt;h4 class="alert-heading"&gt;Warning!&lt;/h4&gt;
+                    &lt;p&gt;You need to have &lt;a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank"&gt;JavaScript&lt;/a&gt; enabled to use this site.&lt;/p&gt;
+                &lt;/div&gt;
+                </noscript>
+
+                <!-- content starts -->
+                                    <div id="content" class="span9">
+                        <div>
+        <ul class="breadcrumb">
+
+                                        <li>
+                            <a href="http://bbsc.cable.ml/console/dashboard">Dashboard</a><span class="divider">/</span>
+                       </li>
+                                <li style="float: right"><a href="javascript:void(0);" onclick="goBack();"><span class="icon icon-undo" data-rel="tooltip" style="cursor: pointer" data-original-title="Go Back"></span></a></li>
+        </ul>
+</div>
+<script>
+function goBack(){
+    if(typeof $('ul.breadcrumb  li:nth-last-child(3)').children('a').attr('href')!='undefined')
+        window.location.href = $('ul.breadcrumb  li:nth-last-child(3)').children('a').attr('href');
+}
+</script>                    <div class="index-wrapper">
+    <div class="widget-area">
+        
+    <div class="box span6">
+        <div class="box-header well" data-original-title="">
+            <h2><i class="icon-bell"></i>Cable Overview</h2>
+            <div class="box-icon">
+
+
+                <a href="http://bbsc.cable.ml/console/dashboard#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+            </div>
+        </div>
+        <div class="box-content">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Labels</th>
+                        <th>Number Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="label">Customers</span>
+                        </td>
+                        <td>
+                            <a target="_blank" href="http://bbsc.cable.ml/console/customer/inactive_customer"><button class="btn btn-info"> <i class="icon-ban-circle"></i>Inactive: 286</button></a>
+                            <a target="_blank" href="http://bbsc.cable.ml/console/customer/active_customer"><button class="btn btn-info"> <i class="icon-ok-circle"></i>Active:  545</button></a>
+                            <a target="_blank" href="http://bbsc.cable.ml/console/customer/all_customer"><button class="btn btn-info"> <i class="icon-info-sign"></i>Total: 831</button></a>
+                            <a target="_blank" href="http://bbsc.cable.ml/console/customer/active_free_customer"><button class="btn btn-info"> <i class="icon-info-sign"></i>Active Free: 8</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-success">Packages</span>
+                        </td>
+                        <td>
+                                                                <a target="_blank" href="http://bbsc.cable.ml/console/customer/package_customer/?package=explode"><button class="btn btn-info">
+                                            <span class="label">explode : 31</span>
+                                        </button>
+                                    </a>
+                                                                    <a target="_blank" href="http://bbsc.cable.ml/console/customer/package_customer/?package=chrome%20b"><button class="btn btn-info">
+                                            <span class="label">chrome b : 197</span>
+                                        </button>
+                                    </a>
+                                                                    <a target="_blank" href="http://bbsc.cable.ml/console/customer/package_customer/?package=glitter"><button class="btn btn-info">
+                                            <span class="label">glitter : 161</span>
+                                        </button>
+                                    </a>
+                                                                    <a target="_blank" href="http://bbsc.cable.ml/console/customer/package_customer/?package=glitter%20a"><button class="btn btn-info">
+                                            <span class="label">glitter a : 44</span>
+                                        </button>
+                                    </a>
+                                                                    <a target="_blank" href="http://bbsc.cable.ml/console/customer/package_customer/?package=explode%20a"><button class="btn btn-info">
+                                            <span class="label">explode a : 25</span>
+                                        </button>
+                                    </a>
+                                                                    <a target="_blank" href="http://bbsc.cable.ml/console/customer/package_customer/?package=explode%20b"><button class="btn btn-info">
+                                            <span class="label">explode b : 16</span>
+                                        </button>
+                                    </a>
+                                                                    <a target="_blank" href="http://bbsc.cable.ml/console/customer/package_customer/?package=EXPLORE%20HD"><button class="btn btn-info">
+                                            <span class="label">EXPLORE HD : 5</span>
+                                        </button>
+                                    </a>
+                                                                    <a target="_blank" href="http://bbsc.cable.ml/console/customer/package_customer/?package=GLITER%20N"><button class="btn btn-info">
+                                            <span class="label">GLITER N : 6</span>
+                                        </button>
+                                    </a>
+                                                                    <a target="_blank" href="http://bbsc.cable.ml/console/customer/package_customer/?package=CHROME"><button class="btn btn-info">
+                                            <span class="label">CHROME  : 60</span>
+                                        </button>
+                                    </a>
+                                                                    <a target="_blank" href="http://bbsc.cable.ml/console/customer/package_customer/?package=Unset"><button class="btn btn-info">
+                                            <span class="label">Unset : 7</span>
+                                        </button>
+                                    </a>
+                                                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-success">Collection of the day</span>
+                        </td>
+                        <td>
+                            Rs: 0/-
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-success">Collection of this week</span>
+                        </td>
+                        <td>
+                            Rs: 0/-
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-success">Collection of December</span>
+                        </td>
+                        <td>
+                            Rs: 0/-
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-success">Collection of 2016</span>
+                        </td>
+                        <td>
+                            Rs: 783147/-
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-important">Net Due:</span>
+                        </td>
+                        <td>
+                            Rs: 0/-
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="label label-warning">Total (December-16) </span>
+                        </td>
+                        <td>
+                            <span class="label label-success">Collected  Rs:0/-</span>
+                            <span class="label label-info">Billed Rs:</span>
+
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div><!--/span-->
+
+    
+       <!-- <div class="box span6">
+            <div class="box-header well" data-original-title>
+                <h2><i class="icon-bell"></i>Internet Overview</h2>
+                <div class="box-icon">
+                    
+                    
+                    <a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+                </div>
+            </div>
+            <div class="box-content">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Labels</th>
+                            <th>Number Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="label">Customers</span>
+                            </td>
+                            <td>
+                                <span class="label">Inactive: 10</span> 
+                                <span class="label label-success">Active:  60</span>
+                                <span class="label label-info">Total: 70</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-success">Packages</span>
+                            </td>
+                            <td>
+                                                                    <span class="label">Speed Entry 128 kbps : 2</span>
+                                                                    <span class="label">Sun 2 mbps : 1</span>
+                                                                    <span class="label">Speed 1000 : 3</span>
+                                                                    <span class="label">768 kbps : 1</span>
+                                                                    <span class="label">Speed Starter 256 kbps : 16</span>
+                                                                    <span class="label">super 512 : 6</span>
+                                                                    <span class="label">ONE MBPS : 1</span>
+                                                                    <span class="label">Speed 512 kbps : 16</span>
+                                                                    <span class="label">Speed Standard 384 kbps : 8</span>
+                                                                    <span class="label">Speed ZOOM 256 kbps : 1</span>
+                                                                    <span class="label">Speed ZET 1 mbps : 2</span>
+                                                                    <span class="label">Speed Express 640kbp : 3</span>
+                                                            </td>
+                        </tr>
+                       <tr>
+                            <td>
+                                <span  class="label label-success">Collection of the day</span>
+                            </td>
+                            <td>
+                                Rs: 0/-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span  class="label label-success">Collection of this week</span>
+                            </td>
+                            <td>
+                                Rs: 0/-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span  class="label label-success">Collection of December</span>
+                            </td>
+                            <td>
+                                Rs: 0/-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span  class="label label-success">Collection of 2016</span>
+                            </td>
+                            <td>
+                                Rs: 31051/-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span  class="label label-important">Net Due:</span>
+                            </td>
+                            <td>
+                                Rs: 6494/-
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <span class="label label-warning">Total (December-16) </span>
+                            </td>
+                            <td>
+                                <span class="label label-success">Collected  Rs:0/-</span>
+                                <span class="label label-info">Billed Rs:6494.00</span>
+
+                            </td>
+                        </tr>
+                                
+                    </tbody>
+                </table>
+            </div>
+        </div>--><!--/span-->
+		
+		 <div class="box span6">
+            <div class="box-header well" data-original-title="">
+                <h2><i class="icon-bell"></i>Internet Overview</h2>
+                <div class="box-icon">
+                    
+                    
+                    <a href="http://bbsc.cable.ml/console/dashboard#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+                </div>
+            </div>
+            <div class="box-content">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Labels</th>
+                            <th>Number Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="label">Customers</span>
+                            </td>
+                            <td>
+                               <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/inactive_customer"><button class="btn btn-info"> <i class="icon-ban-circle"></i>Inactive: 10</button></a> 
+                               <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/active_customer"><button class="btn btn-info"> <i class="icon-ok-circle"></i>Active:  60</button></a>
+                               <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/all_customer"><button class="btn btn-info"> <i class="icon-info-sign"></i>Total: 70</button></a>
+							   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/active_free_customer"><button class="btn btn-info"> <i class="icon-info-sign"></i>Active Free: 0</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-success">Packages</span>
+                            </td>
+                            <td>
+                                                                   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/package_customer/?package=Speed%20Entry%20128%20kbps"><button class="btn btn-info">
+								   <span class="label">Speed Entry 128 kbps : 2</span>
+								   </button>
+								   </a>
+                                                                   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/package_customer/?package=Sun%202%20mbps"><button class="btn btn-info">
+								   <span class="label">Sun 2 mbps : 1</span>
+								   </button>
+								   </a>
+                                                                   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/package_customer/?package=Speed%201000"><button class="btn btn-info">
+								   <span class="label">Speed 1000 : 3</span>
+								   </button>
+								   </a>
+                                                                   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/package_customer/?package=768%20kbps"><button class="btn btn-info">
+								   <span class="label">768 kbps : 1</span>
+								   </button>
+								   </a>
+                                                                   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/package_customer/?package=Speed%20Starter%20256%20kbps"><button class="btn btn-info">
+								   <span class="label">Speed Starter 256 kbps : 16</span>
+								   </button>
+								   </a>
+                                                                   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/package_customer/?package=super%20512"><button class="btn btn-info">
+								   <span class="label">super 512 : 6</span>
+								   </button>
+								   </a>
+                                                                   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/package_customer/?package=ONE%20MBPS"><button class="btn btn-info">
+								   <span class="label">ONE MBPS : 1</span>
+								   </button>
+								   </a>
+                                                                   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/package_customer/?package=Speed%20512%20kbps"><button class="btn btn-info">
+								   <span class="label">Speed 512 kbps : 16</span>
+								   </button>
+								   </a>
+                                                                   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/package_customer/?package=Speed%20Standard%20384%20kbps"><button class="btn btn-info">
+								   <span class="label">Speed Standard 384 kbps : 8</span>
+								   </button>
+								   </a>
+                                                                   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/package_customer/?package=Speed%20ZOOM%20256%20kbps"><button class="btn btn-info">
+								   <span class="label">Speed ZOOM 256 kbps : 1</span>
+								   </button>
+								   </a>
+                                                                   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/package_customer/?package=Speed%20ZET%201%20mbps"><button class="btn btn-info">
+								   <span class="label">Speed ZET 1 mbps : 2</span>
+								   </button>
+								   </a>
+                                                                   <a target="_blank" href="http://bbsc.cable.ml/console/internet_customer/package_customer/?package=Speed%20Express%20640kbp"><button class="btn btn-info">
+								   <span class="label">Speed Express 640kbp : 3</span>
+								   </button>
+								   </a>
+                                                            </td>
+                        </tr>
+                       <tr>
+                            <td>
+                                <span class="label label-success">Collection of the day</span>
+                            </td>
+                            <td>
+                                Rs: 0/-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-success">Collection of this week</span>
+                            </td>
+                            <td>
+                                Rs: 0/-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-success">Collection of December</span>
+                            </td>
+                            <td>
+                                Rs: 0/-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-success">Collection of 2016</span>
+                            </td>
+                            <td>
+                                Rs: 31051/-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-important">Net Due:</span>
+                            </td>
+                            <td>
+                                Rs: 6494/-
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <span class="label label-warning">Total (December-16) </span>
+                            </td>
+                            <td>
+                                <span class="label label-success">Collected  Rs:0/-</span>
+                                <span class="label label-info">Billed Rs:6494.00</span>
+
+                            </td>
+                        </tr>
+                                
+                    </tbody>
+                </table>
+            </div>
+        </div><!--/span-->
+		
+		
+		
+       
+    
+
+    </div>
+</div>
+
+<!-- content ends -->
+</div><!--/#content.span10-->
+</div><!--/fluid-row-->
+
+<hr>
+
+<div class="modal hide fade" id="myModal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h3 class="modal-title">Settings</h3>
+    </div>
+    <div class="modal-body">
+        <p>Here settings can be configured...</p>
+    </div>
+    <div class="modal-footer">
+        <a href="http://bbsc.cable.ml/console/dashboard#" class="btn" data-dismiss="modal">Close</a>
+        <a href="http://bbsc.cable.ml/console/dashboard#" class="btn btn-primary">OK</a>
+    </div>
+</div>
+
+<footer>
+    <p class="pull-left"></p>
+<!--    <p class="pull-right">Developed by: <a href="http://hex-co.de">HexCode</a></p>-->
+</footer>
+
+</div><!--/.fluid-container-->
+
+<!-- external javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<!-- jQuery -->
+<script src="./Console Panel_files/jquery-1.7.2.min.js.download"></script>
+<!-- jQuery UI -->
+<script src="./Console Panel_files/jquery-ui-1.8.21.custom.min.js.download"></script>
+<!-- transition / effect library -->
+<script src="./Console Panel_files/bootstrap-transition.js.download"></script>
+<!-- alert enhancer library -->
+<script src="./Console Panel_files/bootstrap-alert.js.download"></script>
+<!-- modal / dialog library -->
+<script src="./Console Panel_files/bootstrap-modal.js.download"></script>
+<!-- custom dropdown library -->
+<script src="./Console Panel_files/bootstrap-dropdown.js.download"></script>
+<!-- scrolspy library -->
+<script src="./Console Panel_files/bootstrap-scrollspy.js.download"></script>
+<!-- library for creating tabs -->
+<script src="./Console Panel_files/bootstrap-tab.js.download"></script>
+<!-- library for advanced tooltip -->
+<script src="./Console Panel_files/bootstrap-tooltip.js.download"></script>
+<!-- popover effect library -->
+<script src="./Console Panel_files/bootstrap-popover.js.download"></script>
+<!-- button enhancer library -->
+<script src="./Console Panel_files/bootstrap-button.js.download"></script>
+<!-- accordion library (optional, not used in demo) -->
+<script src="./Console Panel_files/bootstrap-collapse.js.download"></script>
+<!-- carousel slideshow library (optional, not used in demo) -->
+<script src="./Console Panel_files/bootstrap-carousel.js.download"></script>
+<!-- autocomplete library -->
+<script src="./Console Panel_files/bootstrap-typeahead.js.download"></script>
+<!-- tour library -->
+<script src="./Console Panel_files/bootstrap-tour.js.download"></script>
+<!-- library for cookie management -->
+<script src="./Console Panel_files/jquery.cookie.js.download"></script>
+<!-- data table plugin -->
+<script src="./Console Panel_files/jquery.dataTables.min.js.download"></script>
+
+<!-- chart libraries start -->
+<script src="./Console Panel_files/excanvas.js.download"></script>
+<script src="./Console Panel_files/jquery.flot.min.js.download"></script>
+<script src="./Console Panel_files/jquery.flot.pie.min.js.download"></script>
+<script src="./Console Panel_files/jquery.flot.stack.js.download"></script>
+<script src="./Console Panel_files/jquery.flot.resize.min.js.download"></script>
+<!-- chart libraries end -->
+
+<!-- select or dropdown enhancer -->
+<script src="./Console Panel_files/jquery.chosen.min.js.download"></script>
+<!-- checkbox, radio, and file input styler -->
+<script src="./Console Panel_files/jquery.uniform.min.js.download"></script>
+<!-- plugin for gallery image view -->
+<script src="./Console Panel_files/jquery.colorbox.min.js.download"></script>
+<!-- rich text editor library -->
+<script src="./Console Panel_files/jquery.cleditor.min.js.download"></script>
+<!-- notification plugin -->
+<script src="./Console Panel_files/jquery.noty.js.download"></script>
+<!-- file manager library -->
+<script src="./Console Panel_files/jquery.elfinder.min.js.download"></script>
+<!-- star rating plugin -->
+<script src="./Console Panel_files/jquery.raty.min.js.download"></script>
+<!-- for iOS style toggle switch -->
+<script src="./Console Panel_files/jquery.iphone.toggle.js.download"></script>
+<!-- autogrowing textarea plugin -->
+<script src="./Console Panel_files/jquery.autogrow-textarea.js.download"></script>
+<!-- multiple file upload plugin -->
+<script src="./Console Panel_files/jquery.uploadify-3.1.min.js.download"></script>
+<!-- history.js for cross-browser state change on ajax -->
+<script src="./Console Panel_files/jquery.history.js.download"></script>
+<script src="./Console Panel_files/jquery.datetimepicker.js.download"></script>
+<script src="./Console Panel_files/bootstrap-tagsinput.js.download"></script>
+
+
+
+<!-- application script for Charisma demo -->
+<script src="./Console Panel_files/charisma.js.download"></script>
+
+
+<!-- application script for projectx -->
+<script src="./Console Panel_files/fastapp.js.download"></script>
+<script>
+</script>
+
+<script>console.log('analitics')</script><!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5799cba8d2d8e3987f8b429f/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none; padding-bottom: 57px; padding-right: 28px;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div id="qh1Tskn-1481006187073" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; position: fixed !important; border: 0px !important; min-height: 0px !important; min-width: 0px !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: auto !important; height: auto !important; z-index: 2000000000 !important; cursor: auto !important; float: none !important; bottom: 0px !important; left: 0px !important; right: auto !important; display: block;"><iframe id="xbgZBG6-1481006187074" src="./Console Panel_files/saved_resource.html" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: auto !important; left: auto !important; position: static !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 320px !important; height: 400px !important; z-index: 999999 !important; cursor: auto !important; float: none !important; display: none !important;"></iframe><iframe id="ARSgN6z-1481006187076" src="./Console Panel_files/saved_resource(1).html" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; transition-property: none !important; z-index: 1000001 !important; cursor: auto !important; float: none !important; height: 40px !important; min-height: 40px !important; max-height: 40px !important; width: 320px !important; min-width: 320px !important; max-width: 320px !important; transform: rotate(0deg) translateZ(0px) !important; transform-origin: 0px center 0px !important; margin: 0px !important; top: auto !important; bottom: 0px !important; left: 10px !important; right: auto !important; display: block !important;"></iframe><iframe id="AOF3lHI-1481006187076" src="./Console Panel_files/saved_resource(2).html" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; display: none !important; z-index: 1000003 !important; cursor: auto !important; float: none !important; top: auto !important; bottom: 40px !important; left: 10px !important; right: auto !important; width: 320px !important; max-width: 320px !important; min-width: 320px !important; height: 37px !important; max-height: 37px !important; min-height: 37px !important;"></iframe><iframe id="e3L5792-1481006187076" src="./Console Panel_files/saved_resource(3).html" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; transition-property: none !important; cursor: auto !important; float: none !important; transform: rotate(0deg) translateZ(0px) !important; transform-origin: 0px center 0px !important; bottom: 15px !important; top: auto !important; left: 77px !important; right: auto !important; width: 259px !important; max-width: 259px !important; min-width: 259px !important; height: 90px !important; max-height: 90px !important; min-height: 90px !important; z-index: 1000000 !important; margin: 0px !important; display: none !important;"></iframe><div id="juocus9-1481006187072" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none rgb(255, 255, 255) !important; opacity: 0 !important; top: 1px !important; bottom: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: auto !important; height: 45px !important; display: block !important; z-index: 999997 !important; cursor: move !important; float: none !important; left: 0px !important; right: 96px !important;"></div><div id="zXb1shn-1481006187073" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 96px !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: w-resize !important; float: none !important;"></div><div id="bU9frTv-1481006187073" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: e-resize !important; float: none !important;"></div><div id="NlHh0FZ-1481006187073" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: n-resize !important; float: none !important;"></div><div id="wCyowNZ-1481006187073" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: 0px !important; bottom: 0px !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: s-resize !important; float: none !important;"></div><div id="OYEWhyt-1481006187073" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: nw-resize !important; float: none !important;"></div><div id="WJJUYFJ-1481006187074" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: ne-resize !important; float: none !important;"></div><div id="IoWkJ8d-1481006187074" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: 0px !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: sw-resize !important; float: none !important;"></div><div id="VRL8WPD-1481006187074" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: 0px !important; bottom: 0px !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999999 !important; cursor: se-resize !important; float: none !important;"></div><div class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 100% !important; display: none !important; z-index: 1000001 !important; cursor: move !important; float: left !important;"></div></div><iframe src="./Console Panel_files/saved_resource(4).html" style="display: none !important;"></iframe></body></html>

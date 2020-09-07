@@ -1,0 +1,1 @@
+{"site_setting_record_per_page":20,"site_setting_status":0,"site_setting_analytics":null,"site_setting_copyright":null,"site_setting_title":"Console Panel","site_setting_description":"Admin panel of the site","site_setting_logo":"recodlogo.png","site_setting_fav":null,"site_setting_welcome_text":null}

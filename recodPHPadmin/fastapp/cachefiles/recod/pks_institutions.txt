@@ -1,0 +1,1 @@
+[{"Table":"institutions","Non_unique":"0","Key_name":"PRIMARY","Seq_in_index":"1","Column_name":"institute_ID","Collation":"A","Cardinality":"0","Sub_part":null,"Packed":null,"Null":"","Index_type":"BTREE","Comment":"","Index_comment":""}]

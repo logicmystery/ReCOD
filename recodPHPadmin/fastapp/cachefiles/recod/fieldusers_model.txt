@@ -1,0 +1,1 @@
+{"textarea_columns":null,"datetimepicker_columns":["user_created_at"],"datepicker_columns":null,"use_status_columns":null,"tablePrimaryKey":"user_ID"}

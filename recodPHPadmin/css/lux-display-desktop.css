@@ -1,0 +1,17 @@
+@media screen and (min-width: 1224px) {
+
+
+.site {
+	max-width:1000px;
+}
+	
+	
+.view-display-size:after {
+	content:"display is desktop version";
+}
+textarea.wysiwyg {
+	height:400px;
+}
+
+
+}
