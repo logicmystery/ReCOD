@@ -61,6 +61,6 @@ endpoing : https://recod.apphost.cloud:9996/recoddata/fetchdata
                 "test_result": false
             }
         }
-
+**N.B: All request will be in post format with json payload
 ### for further query please contact admin@logicmystery.com
 
