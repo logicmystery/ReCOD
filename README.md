@@ -4,11 +4,10 @@ CORONA TEST REPORT TRACKING SERVER
 
 # Folder Structure
 
-    there are 3 folders
+    there are 2 folders
 
-    1) recodApp for basic app
-    2) recodeNodeApi is a nodejs based api
-    3) recodePHPadmin is a php(5.6) based admin panel
+    1) recodeNodeApi is a nodejs based api
+    2) recodePHPadmin is a php(5.6) based admin panel
 
 database used mysql
 
