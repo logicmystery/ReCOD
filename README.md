@@ -2,7 +2,7 @@
 
 CORONA TEST REPORT TRACKING SERVER
 
-# FOlder Structure
+# Folder Structure
 
     there are 3 folders
 
